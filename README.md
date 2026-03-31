@@ -71,7 +71,7 @@ Bash shell (version 4.0 or higher — check with bash --version)
 Apache HTTP Server installed (sudo apt install apache2 -y)
 Step 1 - Clone the repository
 
-git clone https://github.com/Xylarian/oss-audit-24BCY10080.git
+(https://github.com/DevAarsh/Open-Source-Audit.git)
 cd oss-audit-24BAI10641
 Step 2 - Install Apache HTTP Server
 
