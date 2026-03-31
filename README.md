@@ -1,4 +1,4 @@
-oss-audit-24BCY10080
+oss-audit-24BAI10641
 
 Open Source Software Audit — Capstone Project
 
@@ -13,7 +13,7 @@ This repository contains all shell scripts and supporting materials for the Open
 
 Repository Structure
 
-oss-audit-24BCY10080/
+oss-audit-24BAI10641/
 ├── script1.sh      # System Identity Report
 ├── script2.sh      # FOSS Package Inspector
 ├── script3.sh      # Disk and Permission Auditor
@@ -72,7 +72,7 @@ Apache HTTP Server installed (sudo apt install apache2 -y)
 Step 1 - Clone the repository
 
 git clone https://github.com/Xylarian/oss-audit-24BCY10080.git
-cd oss-audit-24BCY10080
+cd oss-audit-24BAI10641
 Step 2 - Install Apache HTTP Server
 
 sudo apt update
