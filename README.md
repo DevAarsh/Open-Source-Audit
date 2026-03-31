@@ -2,8 +2,8 @@
 # OSS Audit Project
 
 ## Student Details
-Name: Your Name  
-Roll No: XXXXX  
+Name: Aarsh Shrivastava
+Reg no - 24BAI10641
 
 ## Chosen Software
 Git (Distributed Version Control System)
