@@ -1,27 +1,46 @@
 #!/bin/bash
+
+# ==========================================================
 # Script 1: System Identity Report
-# Author: Your Name | Course: OSS
+# Author: Aarsh Shrivastava
+# Course: Open Source Software
+# Description: Displays important system information
+# ==========================================================
 
-# --- Variables ---
-STUDENT_NAME="Your Name"
-SOFTWARE_CHOICE="Git"
+# ----------- User-defined Variables ------------------------
+STUDENT_NAME="Aarsh Shrivastava"        # Stores student name
+SOFTWARE_CHOICE="Apache HTTP Server" # Stores chosen software
 
-# --- System Info ---
+# ----------- System Information Collection -----------------
+
+# Get Linux kernel version
 KERNEL=$(uname -r)
-USER_NAME=$(whoami)
-UPTIME=$(uptime -p)
-DATE=$(date)
-DISTRO=$(lsb_release -d 2>/dev/null | cut -f2)
 
-# --- Display ---
-echo "================================"
+# Get current logged-in user
+USER_NAME=$(whoami)
+
+# Get system uptime in readable format
+UPTIME=$(uptime -p)
+
+# Get current date and time
+DATE=$(date)
+
+# Get Linux distribution name from OS release file
+DISTRO=$(grep PRETTY_NAME /etc/os-release | cut -d= -f2 | tr -d '"')
+
+# ----------- Display Output -------------------------------
+
+echo "========================================"
 echo " Open Source Audit — $STUDENT_NAME"
-echo "================================"
+echo "========================================"
 echo "Software Chosen : $SOFTWARE_CHOICE"
-echo "Kernel          : $KERNEL"
-echo "User            : $USER_NAME"
+echo "Distribution    : $DISTRO"
+echo "Kernel Version  : $KERNEL"
+echo "Current User    : $USER_NAME"
+echo "Home Directory  : $HOME"
 echo "Uptime          : $UPTIME"
-echo "Date            : $DATE"
-echo "Distro          : $DISTRO"
-echo "License         : Linux is mostly GPL licensed"
-echo "================================"
+echo "Date & Time     : $DATE"
+echo ""
+# Display license information
+echo "License Info    : Linux is typically licensed under the GNU General Public License (GPL)."
+echo "========================================"
